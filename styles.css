@@ -1,0 +1,525 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  color: #333;
+}
+/* Navbar Styles */
+.navbar {
+  background-color: #e67e22; /* Orange color */
+  padding: 20px 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  color: white; /* White logo */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar .nav-links li {
+  margin-left: 20px;
+}
+
+.navbar .nav-links a {
+  color: white; /* White text for nav links */
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px 10px;
+}
+
+.navbar .nav-links a:hover {
+  color: #f39c12; /* Bright Yellow on hover */
+}
+
+
+
+
+
+/* General Styles */
+/* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}/*h*/
+
+/*body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f4f8; 
+  color: #2c3e50; 
+  line-height: 1.6;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #2980b9; 
+}
+
+
+.navbar {
+  background-color: #e67e22; 
+  padding: 10px 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  color: white; 
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar .nav-links li {
+  margin-left: 20px;
+}
+
+.navbar .nav-links a {
+  color: white; /
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+}
+
+.navbar .nav-links a:hover {
+  color: #f39c12; 
+}
+
+/* Hero Section */
+.hero {
+  background-color: #2e7983; /* Bright Sky Blue */
+  color: white; /* White text for better visibility */
+  text-align: center;
+  text-decoration: none;
+  padding: 100px 20px;
+}
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.hero h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: white;
+  
+}
+
+.hero p {
+  font-size: 20px;
+  margin-top: 10px;
+  /*margin-bottom: 40px; /* Increased margin-bottom for more space */
+  color: black;
+  
+}
+
+.spacer {
+  height: 20px; /* Adjust height as needed */
+}
+
+.hero .btn {
+  padding: 10px 20px;
+  background-color: #e67e22; /* Bright Red */
+  color: white; /* White text for contrast */
+  border: none;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.hero .btn:hover {
+  background-color: #c0392b; /* Darker Red on hover */
+  color: #ecf0f1; /* Light Grey on hover */
+}
+
+
+
+
+
+
+/*blog
+/* General Styling */
+/*body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar Section */
+/*.navbar {
+  background-color: #0066cc;
+  padding: 10px 0;
+}
+
+.logo {
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+/* Blog Section Styles */
+.blog-section {
+  padding: 60px 0; /* Increased padding for more whitespace */
+}
+
+.blog-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 36px; /* Larger section heading */
+  color: #333; /* Darker color for better contrast */
+  text-transform: uppercase; /* Uppercase for emphasis */
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px; /* Increased spacing between cards */
+}
+
+/* Blog Card Styles */
+.blog-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+  position: relative; /* Position for pseudo-elements */
+}
+
+.blog-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 123, 255, 0.1); /* Light overlay */
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.3s; /* Fade in effect */
+}
+
+.blog-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.blog-card:hover::before {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.blog-card iframe {
+  border: none;
+  width: 100%;
+  height: 200px; /* Consistent height for iframes */
+}
+
+.blog-content {
+  padding: 20px;
+}
+
+.blog-content h3 {
+  font-size: 24px; 
+  margin-bottom: 10px;
+  color: #007bff; /* Match navbar color */
+  text-transform: capitalize; /* Capitalize for stylistic effect */
+}
+
+.blog-content p {
+  font-size: 16px;
+  color: #666; /* Softer color for paragraph text */
+  line-height: 1.6; /* Better readability */
+}
+
+
+
+/* Footer Section */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+
+/* Features Section */
+.features {
+  background-color: #fff;
+  padding: 50px 20px;
+}
+
+.features h3 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.feature-item h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  margin-bottom: 20px;
+}
+
+.feature-item .btn-small {
+  background-color: rgb(218, 93, 214);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.feature-item .btn-small:hover {
+  background-color: #0056b3;
+}
+
+
+/* Exams Section */
+
+
+.exams {
+  padding: 20px 0; /* Padding for the exams section */
+}
+
+.exam-grid {
+  display: flex; /* Flexbox for grid layout */
+  flex-wrap: wrap; /* Allow wrapping to next line */
+  gap: 20px; /* Space between exam items */
+}
+
+.exam-item {
+  background-color: #f4f4f4; /* Light gray background for exam items */
+  border: 1px solid #ddd; /* Border around exam items */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Padding inside each exam item */
+  flex: 1 1 calc(25% - 20px); /* Responsive size */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  text-align: center; /* Center text */
+  transition: transform 0.3s; /* Smooth scale on hover */
+}
+
+.exam-item:hover {
+  transform: scale(1.05); /* Grow effect on hover */
+}
+
+h4 {
+  margin-bottom: 10px; /* Space below heading */
+}
+
+.btn-small {
+  display: inline-block; /* Inline block for buttons */
+  background-color: #007BFF; /* Button color */
+  color: white; /* Button text color */
+  padding: 10px 15px; /* Padding for buttons */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.btn-small:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly grow on hover */
+}
+
+
+
+
+
+
+.resources {
+    padding: 60px 0; /* Increased padding for breathing space */
+    text-align: center; /* Center align text */
+}
+
+h2 {
+    margin-bottom: 20px; /* Space below heading */
+    font-size: 2.5em; /* Larger font size */
+    color: #0056b3; /* Primary color */
+}
+
+p {
+    margin-bottom: 40px; /* Space below paragraph */
+    font-size: 1.2em; /* Slightly larger font size */
+    color: #555; /* Soft gray color */
+}
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.resource-item {
+    background: #fff; /* White background for items */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    padding: 20px; /* Padding for content */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+.resource-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+.resource-item h4 {
+    color: #007BFF; /* Blue heading */
+    font-size: 1.5em; /* Larger heading */
+    margin-bottom: 15px; /* Space below heading */
+}
+
+.subject-buttons {
+    margin-top: 15px; /* Space between title and buttons */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center align buttons */
+}
+
+.btn-resource {
+    display: block; /* Block display for consistent sizing */
+    width: 100%; /* Full width of the container */
+    max-width: 200px; /* Set a max width to maintain size */
+    margin: 5px 0; /* Vertical spacing between buttons */
+    padding: 12px 0; /* Uniform vertical padding */
+    background-color: #007BFF; /* Button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold; /* Make button text bold */
+    text-align: center; /* Center text within button */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.btn-resource:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly grow on hover */
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Increased padding */
+    margin-top: 40px; /* Space above footer */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Shadow for footer */
+}
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer h3 {
+    margin: 0;
+}
+
+  
+footer {
+  background-color: rgb(20, 67, 117);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+

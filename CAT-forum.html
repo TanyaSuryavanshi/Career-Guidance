@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAT Discussion Forum</title>
+    <link rel="stylesheet" href="forum.css" />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <header class="navbar">
+      <div class="container">
+        <h1 class="logo">CareerGuidance Forum</h1>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="forum.html">Forum</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- CAT Discussion Section -->
+    <section class="threads-section">
+      <div class="container">
+        <h2>CAT Discussion Threads</h2>
+
+        <div class="thread-list">
+          <div class="thread-card">
+            <h4>Best Books for CAT</h4>
+            <p>
+              Discussion about the best resources and books for CAT preparation.
+            </p>
+            <a href="thread1.html" class="btn">View Thread</a>
+          </div>
+          <div class="thread-card">
+            <h4>How to manage time during preparation?</h4>
+            <p>Share your tips for managing study time effectively.</p>
+            <a href="thread2.html" class="btn">View Thread</a>
+          </div>
+          <!-- More threads can be added here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Post Creation Form Section -->
+    <section class="create-post-section">
+      <div class="container">
+        <h3>Create a New Post</h3>
+        <form class="create-post-form">
+          <label for="post-title">Post Title:</label>
+          <input type="text" id="post-title" name="post-title" required />
+
+          <label for="post-content">Content:</label>
+          <textarea
+            id="post-content"
+            name="post-content"
+            rows="5"
+            required
+          ></textarea>
+
+          <button type="submit" class="btn">Post</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 CareerGuidance. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
